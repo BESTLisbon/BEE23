@@ -2,437 +2,861 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS -->
-    <link href="./css/styles.css" rel="stylesheet" />
+	<script type="text/javascript">
+		var style = 'home/css/template.css?'+Math.random();;
+	</script>
+		
+	<script type="text/javascript">
+		document.write('<link href="'+style+'" rel="stylesheet">');
+	</script>
 
-    <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-35166719-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
-    <script src="./js/button_events.js"></script>
-    <script src="./js/carousel.js"></script>
+		gtag('config', 'UA-35166719-1');
+	</script>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ninodezign.com, ninodezign@gmail.com">
+	<meta name="copyright" content="ninodezign.com">
+
+	<meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Mon, 16 Nov 2020 17:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+
+	<title>BEST Entreneurship Experience</title>
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/ico/beelogo.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/BEST_icon_114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/BEST_icon_114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/BEST_icon_72.png">
+	<link rel="apple-touch-icon-precomposed" href="images/ico/BEST_icon_57.png">
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.mCustomScrollbar.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css" />
+	<link rel="stylesheet" type="text/css" href="css/unslider.css" />
+	<link rel="stylesheet" type="text/css" href="css/template.css" />
     
-    <title>BEE</title>
+
+	<!-- javascript -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.hoverdir.js"></script>
+	<script type="text/javascript" src="js/modernizr.custom.97074.js"></script>
+	<script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script type="text/javascript" src="js/unslider-min.js"></script>
+	<script type="text/javascript" src="js/template.js"></script>
+	<script type="text/javascript" src="courses/js/jquery.countdown.js"></script>
+
 </head>
 
-<body class="bg-gradient-to-r from-green-500 to-emerald-500 text-white">
-    <!-- Navigation Bar and Side Bar -->
-    <nav>
-        <div class="max-w-7xl p-7 mx-auto lg:my-7 my-2 text-xl font-semibold">
-            <div class="flex justify-between items-center">
-                <div>
-                    <a href="./index.html"><img class="w-36" src="./images/logos/best_lisbon.png" alt="" /></a>
-                </div>
-                <div class="hidden lg:flex space-x-12 items-center">
-                    <div class="hover:text-gray-200 border-b-4 rounded-b-sm border-white hover:border-gray-200">
-                        <a href="./index.html">Home</a>
-                    </div>
-                    <div class="hover:text-gray-200">
-                        <a href="./bee.html">BEE</a>
-                    </div>
-                    <div class="hover:text-gray-200">
-                        <a href="./schedule.html">Schedule</a>
-                    </div>
-                    <div class="hover:text-gray-200">
-                        <a href="./team.html">Team</a>
-                    </div>
-                    <div class="hover:text-gray-200">
-                        <a href="./faqs.html">FAQs</a>
+<body data-target="#nino-navbar" data-spy="scroll">
+
+	<!-- Header
+    ================================================== -->
+	<header id="nino-header">
+
+		<div id="nino-headerInner" class="">
+            <a href="https://best.tecnico.ulisboa.pt/" class="nav-img">
+                <img class="best-logo"src="./images/ico/logo.png"></img>
+            </a>
+			<div class="our-navbar md:grid-cols-8">
+                <a href="#BEE"style="color: rgb(18, 66, 116) ">BEE</a>
+                <a href="#companies" style="color: rgb(18, 66, 116) ">Parceiros</a>
+                <a href="#nino-faq" style="color: rgb(18, 66, 116) ">FAQs</a>
+                <a href="#team" style="color: rgb(18, 66, 116) ">Equipa</a>
+
+				<a href="./en.html">
+					<img class="eng-logo" src="./images/eng_flag.png"></img>
+				</a>
+			</div>
+            <div class="blue-bg position-fixed w-100" style="z-index:2;">
+                <nav class="navbar navbar-expand-lg navbar-light text-white container-fluid row" style="margin-top: 0;">
+                    <div class="navbar-brand col-6 d-flex ms-3" >
+                      <a class="pe-3 py-1" href="https://www.best.eu.org/courses/list.jsp">
+                        <img src="home/images/icons/logos_white.png" class="" alt="BEST Courses" height="60">
+                      </a>
                     </div>
                     
-                    <div class="">
-                        <button
-                            class="bg-white rounded-md py-1 px-3 hover:scale-105 transition-transform text-emerald-500 flex items-center space-x-2"
-                            href="./index.html" onclick="toggleDropdown()">
-                            <p class="font-semibold">Our Events</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-emerald-500"
-                                viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    cdivp-rule="evenodd" />
-                            </svg>
-                        </button>
-                        <div class="absolute bg-white rounded-md hidden flex-col items-center gap-y-5 w-44 py-3 mt-2 shadow-md"
-                            id="dropdown">
-                            <a href=" https://best.tecnico.ulisboa.pt/EBEC23/" class="flex-none">
-                                <img src="./images/logos/ebec.png" alt="ebec lisbon"
-                                    class="w-24 hover:scale-105 transition-transform" />
-                            </a>
-                            <a href="https://www.best.eu.org/courses/list.jsp" class="flex-none">
-                                <img src="./images/logos/courses.png" alt="best courses"
-                                    class="w-28 hover:scale-105 transition-transform" />
-                            </a>
-                            <a href="https://best.tecnico.ulisboa.pt/insideview/" class="flex-none">
-                                <img src="./images/logos/BIV_Logo_azul_semfundo.png" alt="best inside view"
-                                    class="w-16 hover:scale-105 transition-transform" />
-                            </a>
-                        </div>
+                    <button class="navbar-toggler col-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+        
+                    <div class="collapse navbar-collapse col-6 justify-content-center" id="navbarNav">
+                      <ul class="navbar-nav">
+                        <li class="nav-item d-flex justify-content-center">
+                          <button class="nav-link text-white px-4" aria-current="page" onclick="scrollDown('head')" style="background-color: transparent; border: none;">Home</button>
+                        </li>
+                        <li class="nav-item  d-flex justify-content-center">
+                          <button class="underliner nav-link text-white px-4" aria-current="page" onclick="scrollDown('intro')" style="background-color: transparent; border: none;" dis>Introduction</button>
+                        </li>
+                        <li class="nav-item  d-flex justify-content-center">
+                          <button class="nav-link text-white px-4" aria-current="page" onclick="scrollDown('mustRead')" style="background-color: transparent; border: none;">Information</button>
+                        </li>
+                        <li class="nav-item d-flex justify-content-center">
+                          <button class="nav-link text-white px-4" aria-current="page" onclick="scrollDown('faq')" style="background-color: transparent; border: none;">FAQ</button>
+                        </li>
+                        
+                      </ul>
                     </div>
-                    <div class="hover:scale-105 transition-transform">
-                        <a href="./pt_index.html"><img class="w-10 rounded-sm" src="./images/flags/pt_flag.png"
-                                alt="" /></a>
-                    </div>
-                </div>
-                <!--Mobile Button-->
-                <div class="lg:hidden hover:scale-105 transition-transform" onclick="toggleSideBar()">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 fill-white ml-20" viewBox="0 0 20 20"
-                        fill="currentColor">
-                        <path fill-rule="evenodd"
-                            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                            clip-rule="evenodd" />
-                    </svg>
-                </div>
-            </div>
-        </div>
+                </nav>
+              </div>
 
-        <!--SideBar-->
-        <div id="sidebar"
-            class="fixed overflow-hidden top-0 bottom-0 w-0 bg-white overflow-y-auto rounded origin-left duration-200">
-            <div class="duration-100">
-                <img src="./images/logos/best_lisbon_green.png" alt="best" class="w-36 mx-7 lg:my-14 my-9" />
+			<img src="images/banners/banner1.png">  </img>
+		</div>
+        
+        
+	</header>
 
-                <ul class="text-emerald-500 font-semibold text-2xl ml-8">
-                    <li class="mb-8 px-3 hover:text-green-500">
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li class="mb-8 px-3 hover:text-green-500">
-                        <a href="./about_us.html">About Us</a>
-                    </li>
-                    <li class="mb-8 px-3 hover:text-green-500">
-                        <a href="./team.html">Team</a>
-                    </li>
-                    <li class="">
-                        <button
-                            class="bg-emerald-500 rounded-md py-1 px-3 hover:scale-105 transition-transform w-52 text-white flex items-center space-x-2"
-                            href="./index.html" onclick="toggleDropdownSide()">
-                            <p class="font-semibold">Our Events</p>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 fill-white" viewBox="0 0 20 20">
-                                <path fill-rule="evenodd"
-                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                    cdivp-rule="evenodd" />
-                            </svg>
-                        </button>
 
-                        <div class="absolute border-4 border-emerald-500 rounded-md hidden flex-col items-center gap-y-5 w-52 py-3 mt-2 shadow-md"
-                            id="dropdownside">
-                            <a href="https://best.tecnico.ulisboa.pt/ebec2022/" class="flex-none">
-                                <img src="./images/logos/ebec.png" alt="ebec lisbon"
-                                    class="w-24 hover:scale-105 transition-transform" />
-                            </a>
-                            <a href="https://www.best.eu.org/courses/list.jsp" class="flex-none">
-                                <img src="./images/logos/courses.png" alt="best courses"
-                                    class="w-28 hover:scale-105 transition-transform" />
-                            </a>
-                            <a href="https://best.tecnico.ulisboa.pt/insideview/" class="flex-none">
-                                <img src="./images/logos/BIV_Logo_azul_semfundo.png" alt="best inside view"
-                                    class="w-16 hover:scale-105 transition-transform" />
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-                <!-- Flag -->
-                <div class="hover:scale-105 transition-transform bottom-10 left-9 absolute">
-                    <a href="./pt_index.html"><img class="w-10 rounded-sm" src="./images/flags/pt_flag.png" alt="" /></a>
-                </div>
-            </div>
-        </div>
-    </nav>
     
 
-    <main>
-        <section id="BEST-history">
-            <div class="max-w-6xl mx-auto md:mt-10">
-                <div class="grid lg:grid-cols-10 grid-cols-1">
+	<!--/#header-->
 
-                    <div class="col-span-5 mx-auto lg:my-auto lg:text-left text-center">
-                        <h2 class="lg:mb-3 my-3 text-2xl font-bold mx-10">
-                            BEE 2023
-                        </h2>
-                        <p class="text-lg max-w-2xl mx-10">
-                            Join us this March...
-                        </p>
-                    </div>
-                    <div class="col-span-5 mx-auto lg:my-auto my-12 lg:p-0 p-6 hidden lg:block">
-                        <img src="./images/europe_map.png" alt="Best motivational weekend"
-                            class="max-w-md w-full h-auto object-cover" />
-                    </div>
-                </div>
-            </div>
-            <!-- Divider Top -->
-            <div class="svg-border">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                        class="fill-white"></path>
-                </svg>
-            </div>
-        </section>
-        <section id="best-in-numbers">
-            <div class="bg-white">
-                <h2 class="text-center text-green-500 text-3xl font-semibold py-4">
-                    Introduction--> Falar do que é
-                </h2>
-                
-            </div>
-        </section>
-        <section id="best-in-numbers">
-            <div class="bg-white">
-                <h2 class="text-center text-green-500 text-3xl font-semibold py-4">
-                    Video??  ??
-                </h2>
-                
-            </div>
+	
+	<!--/#nino-counting-->
+	<!--
 
-<!-- Divider Bottom -->
-<div class="svg-border" style="transform: rotate(180deg)">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-        preserveAspectRatio="none">
-        <path
-            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-            class="fill-white"></path>
-    </svg>
-</div>
-</section>
-<section id="best-international">
-<div class="max-w-3xl mx-auto p-10 text-center">
-    <h1 class="text-2xl md:text-3xl font-bold">
-        Schedule
-    </h1>
-    <h3 class="text-lg md:text-xl font-normal mt-8">
-        
-    </h3>
-   Colocar horário aqui
-    </a>
-</div>
-<!-- Divider Top -->
-<div class="svg-border">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-        preserveAspectRatio="none">
-        <path
-            d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-            class="fill-white"></path>
-    </svg>
-</div>
-</section>
-        <section id="best-spirit">
-            <div class="bg-white text-white">
-                <h2 class="text-center text-green-500 text-3xl font-semibold py-4">
-                    What you will gain:
-                </h2>
-                <div class="max-w-5xl mx-auto grid grid-cols-4 md:grid-cols-12 text-center justify-items-center">
-                    <div
-                        class="bg-gradient-to-r from-amber-400 to-amber-300 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4">
-                        <h1 class="text-xl font-bold">Daily Workshops</h1>
-                        <h1 class="text-sm lg:text-base font-normal">
-                            ...
-                        </h1>
-                    </div>
-                    <div
-                        class="bg-gradient-to-r from-blue-500 to-blue-400 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4">
-                        <h1 class="text-xl font-bold">....</h1>
-                        <h1 class="text-sm lg:text-base font-normal">
+		<section id="nino-counting" class="pt-4">
+			<div class="containe text-center" style="margin-bottom: 45px">
+				<h2 class="nino-sectionHeading" style="color: rgb(18, 66, 116);">Inscreve-te na Opening Ceremony at&eacute 12 de Janeiro!
+				</h2>
+				<div class="flex-row">
+					<div class="col-lg-2">
+						<div class="timer">
+							<p><span id="days" style="font-size: 35px;"></span> <br>Dias</p>
+						</div>
+					</div>			
+					<div class="col-lg-2">
+						<div class="timer">
+							<p><span id="hours" style="font-size: 35px;"></span> <br>Horas</p>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="timer">
+							<p><span id="minutes" style="font-size: 35px;"></span> <br>Minutos</p>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="timer">
+							<p><span id="seconds" style="font-size: 35px;"></span> <br>Segundos</p>
+						</div>
+					</div>
+					<div class="col-lg-2">
+						<div class="timer2">
+							<a href="https://forms.gle/iQLDbPFZZzWA5FLK7" style="color: #fff">Candidata-te <span
+								style="color: rgb(248, 153, 32)"><b>aqui</b></span>!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+		</section>
+	-->
+	<!-- BEE + BEST Lisboa
+    ================================================== -->
 
-                            
-                        </h1>
-                    </div>
-                    <div
-                        class="bg-gradient-to-r from-orange-500 to-orange-400 py-6 px-2 m-6 md:m-10 rounded-md w-64 lg:w-72 col-span-4">
-                        <h1 class="text-xl font-bold">....</h1>
-                        <h1 class="text-sm lg:text-base font-normal">
-                            
-                        </h1>
-                    </div>
-                    <div class="col-span-2"></div>
+	<section id="BEE">
+        <div style="background-image: url('images/branco.png');">
+				<div class="container text-center  ">
+					<!--<h2 class="nino-sectionHeading">
+						</h2>-->
+					<h2 class="nino-sectionHeading"  style="font-size: 50px" style="color: rgb(18, 66, 116)  ">
+						BEST Entreneurship Experience
+					</h2>
+				
+					<p class="text-center" style="font-size: 20px"  style="color: rgb(0, 0, 0); ">
+						O <b>BEST Entreneurship Experience (BEE)</b> &eacute um evento de <i>bla bla bla</i> trazido para ti pelo BEST Lisboa. Este evento que ocorrer&aacute no dia <span
+						style="color:  rgb(162, 5, 92)"><b>30 de Maio</b></span> bla bla bla bla . "É uma experiência de um dia inteiro que reúne estudantes de toda Lisboa para desenvolver soluções inovadoras para desafios globais urgentes. Através de uma série de workshops, sessões de design thinking, mentoria e coaching com especialistas do setor e exercícios de prototipagem, os participantes aprenderão habilidades profissionais valiosas relacionadas ao empreendedorismo, inovação e resolução de problemas. Eles trabalharão em equipes para desenvolver soluções criativas para um desafio relevante, utilizando diferentes tecnologias e metodologias de ponta. 
 
-                    <div class="col-span-2"></div>
-                </div>
-            </div>
-            <!-- Divider Bottom -->
-            <div class="svg-border" style="transform: rotate(180deg)">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                        class="fill-white"></path>
-                </svg>
-            </div>
-        </section>
-        <section id="best-international">
-            <div class="max-w-3xl mx-auto p-10 text-center">
-                <h1 class="text-2xl md:text-3xl font-bold">
-                    Want to be a part ?
-                </h1>
-                <h3 class="text-lg md:text-xl font-normal mt-8">
-                    Register in the button below.. 
-                </h3>
-                <a href="https://www.best.eu.org/">
-                    <div
-                        class="py-3 px-12 mt-12 bg-white shadow w-72 rounded-lg mx-auto hover:scale-105 transition-transform">
-                        <h2 class="text-2xl md:text-3xl font-bold text-green-500">
-                            Register here!
-                        </h2>
-                    </div>
-                </a>
-            </div>
-            <!-- Divider Top -->
-            <div class="svg-border">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
-                    preserveAspectRatio="none">
-                    <path
-                        d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
-                        class="fill-white"></path>
-                </svg>
-            </div>
-        </section>
-        
-    </main>
-    <!-- Scripts -->
-    <script src="./js/button_events.js"></script>
-</body>
+                    </p>
+				
+					<img class="teamMember" src="images/WhatsApp Image 2023-05-11 at 13.29.21.jpeg" >
 
-        
+					
+				</div>
+			</div>
+		</section>
+		<!--/#nino-uniqueDesign-->
 
-            <section id="best-board">
-                <div class="bg-white">
-                    <div class="max-w-5xl text-center mx-auto py-4">
-                        <h1 class="text-green-500 text-2xl font-semibold mb-10">
-                            Meet our Team 
-                        </h1>
-                        <div class="grid grid-cols-1 md:grid-cols-5 justify-items-center">
-                            <div class="max-w-xs">
-                                <img src="./images/people/André Ribeiro.JPG" alt="" class="rounded-full" />
-                                <h2 class="text-green-600 font-semibold text-lg mt-2">
-                                    Nome
-                                </h2>
-                                <h3 class="text-green-500 font-semibold text-md">
-                                    Função
-                                </h3>
-                            </div>
-                            <div class="max-w-xs">
-                                <img src="./images/people/André Ribeiro.JPG" alt="" class="rounded-full" />
-                                <h2 class="text-green-600 font-semibold text-lg mt-2">
-                                    Nome
-                                </h2>
-                                <h3 class="text-green-500 font-semibold text-md">
-                                    Função
-                                </h3>
-                            </div>
-                            <div class="max-w-xs">
-                                <img src="./images/people/André Ribeiro.JPG" alt="" class="rounded-full" />
-                                <h2 class="text-green-600 font-semibold text-lg mt-2">
-                                    Nome
-                                </h2>
-                                <h3 class="text-green-500 font-semibold text-md">
-                                    Função
-                                </h3>
-                            </div>
-                            <div class="max-w-xs">
-                                <img src="./images/people/André Ribeiro.JPG" alt="" class="rounded-full" />
-                                <h2 class="text-green-600 font-semibold text-lg mt-2">
-                                    Nome
-                                </h2>
-                                <h3 class="text-green-500 font-semibold text-md">
-                                    Função
-                                </h3>
-                            </div>
-                            <div class="max-w-xs">
-                                <img src="./images/people/André Ribeiro.JPG" alt="" class="rounded-full" />
-                                <h2 class="text-green-600 font-semibold text-lg mt-2">
-                                    Nome
-                                </h2>
-                                <h3 class="text-green-500 font-semibold text-md">
-                                    Função
-                                </h3>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </section>
+		<!--/#nino<section id="timeline" class="text-center" style="background-image: url('images/azul.png');">
+			<div class="container py-3">
+                <h2 class="nino-sectionHeading" style="font-size: 40px" >Vantagens de participar</h2>
+				<div class="row justify-content-center">
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/1.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Aprende mais sobre o que a tua empresa favorita realmente faz.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/2.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Expande a tua rede e aprende a fazer contatos profissionais.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/3.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Conhece melhor a cultura e vida profissional das empresas.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/5.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Pratica as tuas habilidades interpessoais num ambiente profissional.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/6.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Ganha uma perspectiva diferente sobre o teu trabalho futuro, aprendendo com as experi&ecircncias de outras pessoas.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<div class ="row">
+									<div class="col-xs-4">
+										<img src="images/BIV2021/Ícones/4.png"  height="80">
+									</div>
+									<div class="col-xs-8">
+										<p class="text">Descobre o teu potencial e os desafios que poder&aacutes encontrar no teu dia-a-dia.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<p class="text2"> ... e ainda habilita-te a ganhar um destes <span style="color:rgb(162, 5, 92)"><b>Pr&eacutemios</b></span> !!!</p>
+				<div style="border-bottom: rgb(162, 5, 92) 2px solid; width: 10%; margin: 0 auto;"></div>
+				<br>
+				<div class="row">
+					
+					<div class="col-lg-4 col-md-6 mb-3">
+						<a href="https://www.laserquest.pt/">
+							<img src="images/empresas2021/giveaway/laserquest.png" height="90px"/>
+							
+						</a>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-3">
+						<a href="https://www.palmayachts.com/pt/private-tour-lisboa/?gclid=CjwKCAiA78aNBhAlEiwA7B76p2eA2rd8VlPvsmQkBRJSHx4TPDYu3ytuHokeuG3WjY86tR6-IiLbZhoCxtkQAvD_BwE">
+							<img src="images/empresas2021/giveaway/palmayachts.png" height="100px"/>
+							
+						</a>
+					</div>	
+				
+					<div class="col-lg-4 col-md-6 mb-3">
+						<a href="https://www.duckdive.pt/">
+							<img src="images/empresas2021/giveaway/duckdive.png" height="90px"/>
+							
+						</a>
+					</div>
+				</div>
+				<br>
+				<p class="text" style="font-size: 12px; margin-left: 2vw;">   * Os prémios consistem em três vouchers a serem sorteados pelos participantes na Opening Ceremony (LaserQuest e PalmaYatchs) e após os Inside Days (DuckDive).</p>
+			
+			</div>
+		</section>
 
-        </section>
-        <section id="sponsors" class="bg-white">
-            <div class="max-w-5xl mx-auto bg-white px-7 py-2">
-                <div
-                    class="grid my-7 md:my-1 lg:grid-cols-4 grid-cols-2 lg:gap-20 md:gap-14 gap-8 items-center content-evenly justify-items-center">
-                    <img class="md:w-40 w-30" src="./images/logos/ist.png" alt="ist" />
-                    <img class="md:w-56 w-42" src="./images/logos/ipdj-large.png" alt="ipdj" />
-                    <img class="md:w-44 w-33" src="./images/logos/santander.png" alt="santander" />
-                    <img class="md:w-40 w-30" src="./images/logos/fcul.png" alt="fcul" />
-                </div>
-            </div>
-        </section>
-    </main>
+	
 
-       
-        <footer>
-    <footer>
-        <div class="bg-white text-center lg:text-left">
-            <div class="container px-20 text-gray-600 mx-auto p-6 ">
-                <div class="grid lg:grid-cols-2 gap-4 items-center border-b-2 pb-10 border-gray-400">
-                    <div class="my-6 md:mb-0">
-                        <div class="text-center md:text-left">
-                            <h3 class="text-xl font-semibold my-4">
-                                Contact us
-                            </h3>
-                            <a class="flex items-center space-x-2" href="mailto:lisbon@best-eu.org">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                </svg>
-                                <p>lisbon@best-eu.org</p>
-                            </a>
-                            <a class="flex items-center space-x-2" href="https://goo.gl/maps/tkWRJizZUSAqjceX6">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <p>
-                                    Avenida Rovisco Pais
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="hidden lg:block my-6 md:mb-0">
-                        <div class="">
-                            <div class="flex lg:flex lg:flex-row-reverse items-center gap-x-5">
-                                <a href="https://best.tecnico.ulisboa.pt/ebec2022/" class="flex-none">
-                                    <img src="./images/logos/ebec.png" alt="ebec lisbon"
-                                        class="w-24 hover:scale-105 transition-transform" />
-                                </a>
-                                <a href="https://www.instagram.com/best.lisbon/" class="flex-none">
-                                    <img src="./images/logos/courses.png" alt="best courses"
-                                        class="w-28 hover:scale-105 transition-transform" />
-                                </a>
-                                <a href="https://best.tecnico.ulisboa.pt/courses/" class="flex-none">
-                                    <img src="./images/logos/BIV_Logo_azul_semfundo.png" alt="best inside view"
-                                        class="w-16 hover:scale-105 transition-transform" />
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mx-auto text-gray-500">
-                    <p class="text-center">© 2023 BEST Lisboa. All rights reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    
+	Design-->
+
+	<section id="companies" style="background-image: url('images/rosa.png');">
+		<div class="container text-center pt-4">
+		<h4 class="nino-sectionHeading" style="font-size: 60px" -webkit-text-stroke-color: #ffffff; >Conhece os nossos parceiros!</h4>
+		
+        <h3 class="nino-sectionHeading" style="font-size: 40px" >Parceiros Principais</h3>
+			
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-2">
+					<a href="http://www.thenavigatorcompany.com/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/navigator.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.quadrante-engenharia.pt/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/quadrante.png"
+						/>
+						</div>	
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-2">
+					<a href="https://www.nttdata.com/global/en/">
+						<div class="card-big">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/ntt data.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.filstone.com/pt/inicio">
+						<div class="card-big">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/filstone-logo2-org-yyzu.png"
+						/>
+						</div>	
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-4">
+					<a href="https://integerconsulting.pt/en/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/logo-integer-black-min.png" height="110px"
+						/>
+						</div>	
+					</a>
+				</div>
+			</div>
+        <!-- Parce
+			<br>
+			<p class="text2"> Participa na <b>Opening Ceremony</b> e conhece a <span style="color: rgb(255, 255, 255)"><b>The Navigator Company</b></span>, 
+				a <span style="color: rgb(255, 255, 255)"><b>Quadrante</b></span>,
+				a <span style="color: rgb(255, 255, 255)"><b>NTT Data</b></span>,
+				a <span style="color: rgb(255, 255, 255)"><b>Filstone</b></span>,
+				e a <span style="color: rgb(255, 255, 255)"><b>Integer Consulting</b></span> na sessão de roundtables.</p>
+			<br>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-2">
+					<a href="https://jetsj.com/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/jet.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.life-emotions.pt/">
+						<div class="card-big">
+							<img
+							class="bigbig card-logo"
+							src="images/empresas2021/Standard/life-emotions-logo.svg"
+						/>
+						</div>	
+					</a>
+				</div>							
+			</div>
+
+			<br><br>
+			<div style="border-bottom: rgb(162, 5, 92) 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br>
+			<div class="text"> Parceiros</div>
+			<br>
+			<div style="border-bottom: rgb(162, 5, 92) 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br><br>
+			
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://engexpor.com/en/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/engexpor_logo.png" height="75px"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.ete.pt/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/ete.png" height="75px"
+						/>
+						</div>	
+					</a>
+				</div>	
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.nemus.pt/en/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Standard/nemus.png"
+						/>
+						</div>	
+					</a>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="http://www.fcm.pt/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/fcm.png" height="80px"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://magnifinance.com/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/logo-magnifinance@2x.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://skyline.be/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/skyline-logo.svg" height="80px"
+						/>
+						</div>	
+					</a>
+				</div>
+				
+			</div>
+			<div class="row">
+				
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://qub-it.com/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/qubit.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://jsj.pt/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Basic/jsj.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.clynx.io/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Starup/clynx+logo+squared.png"
+						/>
+						</div>	
+					</a>
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3 col-lg-offset-4">
+					<a href="https://www.nevaro.tech/pt/pagina-inicial/">
+						<div class="card">
+							<img
+							class="big card-logo"
+							src="images/empresas2021/Starup/nevaro-logo.png" height="80px"
+						/>
+						</div>	
+					</a>
+				</div>
+			</div>
+			
+			<br><br>
+			<div style="border-bottom: rgb(162, 5, 92) 2px solid; width: 10%; margin: 0 auto;"></div>
+			<br><br>
+			<div class="row">
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://tecnico.ulisboa.pt">
+						<div class="card-small">
+							<img 
+								class="big card-logo"
+								src="images/logosinstitucionais/IST.png" height="90px"
+							/>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="http://www.idesporto.pt/">
+						<div class="card-small">
+							<img 
+								class="big card-logo"
+								src="images/logosinstitucionais/IPDJ.png" height="90px"
+							/>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-6 mb-3">
+					<a href="https://www.santandertotta.pt/">
+						<div class="card-small">
+							<img
+								class="big card-logo"
+								src="images/logosinstitucionais/QGexCrIYKkOM-1557827185986.png" height="90px"
+							/>
+						</div>
+					</a>
+				</div>
+					
+			</div>
+
+			<br><br>
+			<br>-->
+		</section>
+			
+
+	
+	<!-- FAQs-->
+
+	<section id="nino-faq" style="background-image: url('images/azul.png');" >
+		<div class="container">
+			<div class="faq-content" >
+                <h4 class="nino-sectionHeading" style="font-size: 60px" -webkit-text-stroke-color: #ffffff;  style="background-image: url('images/azul.png');" >Perguntas Frequentes</h4>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q1" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q1" class="panel-title" style="color: rgb(249, 249, 249);">Quem se pode inscrever?</label>
+							<div class="panel-content">O BIV est&aacute aberto a todos os estudantes inscritos no Instituto Superior T&eacutecnico.</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q2" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q2" class="panel-title" style="color:  rgb(249, 249, 249);">&Eacute necess&aacuterio participar na Opening Ceremony para participar nos Inside Days?</label>
+							<div class="panel-content">A organização sugere a participação em ambas as partes do BEST Inside View. Ao participar na Opening Ceremony (OC), ter&aacutes a oportunidade de ouvir pitches das empresas e fazer todas as perguntas que desejares, para que possas escolher melhor onde desejas realizar o teu Inside Day. No entanto, não &eacute obrigat&oacuterio e haver&aacute um segundo per&iacuteodo de inscrição apenas para os Inside Days ap&oacutes a OC.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q11" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q11" class="panel-title" style="color:  rgb(249, 249, 249);">Quais as normas de segurança que devo seguir para participar na Opening Ceremony?</label>
+							<div class="panel-content">Para a Opening Ceremony é necessário a apresentação de um dos seguintes documentos: (i) certificado digital COVID da EU; (ii) teste PCR negativo válido nas últimas 72 horas; ou (iii) teste de antigénio negativo válido nas últimas 48 horas. </div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q12" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q12" class="panel-title" style="color:  rgb(249, 249, 249);">Como me inscrevo para os Inside Days?
+							</label>
+							<div class="panel-content">A inscrição está dividida em duas fases. Na primeira fase, os estudantes que participarem na Opening Ceremony (OC) terão a oportunidade de preencher o formulário de inscrição para os Inside Days com 48 horas de antecedência em relação aos restantes estudantes e receberam ainda o resultado do matching com a empresa com antecedência. A segunda fase para preencher as vagas sobrantes começa 48 horas após a primeira e terminará no dia 24 de Janeiro.
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q3" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q3" class="panel-title" style="color: rgb(249, 249, 249);">Como &eacute efetuado o matching? </label>
+							<div class="panel-content">O matching &eacute efetuado sempre respeitando as prefer&ecircncias dos alunos e das empresas de acordo com crit&eacuterios definidos pela organização que est&aacute presente no <a
+								href="#nino-doc">regulamento</a> do evento.</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q4" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q4" class="panel-title" style="color:  rgb(249, 249, 249);">Quando saberei os resultados do matching?</label>
+							<div class="panel-content">Ir&aacutes receber um email do BEST Lisboa após uma semana do final do per&iacuteodo de inscrição para os Inside Days.
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q5" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q5" class="panel-title" style="color: rgb(249, 249, 249);">O que acontece depois de ser alocado para uma empresa?
+							</label>
+							<div class="panel-content">Trocaremos contatos entre ti e o respons&aacutevel da empresa de forma a organizarem o Inside Day. A comunicação ser&aacute mediada por n&oacutes, em especial pela nossa Communication Responsible (Marta Rodrigues).
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q6" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q6" class="panel-title" style="color:  rgb(249, 249, 249);">Preciso de submeter o meu CV? O CV deve estar em
+								portugu&ecircs ou ingl&ecircs?</label>
+							<div class="panel-content">Para participar no BEST Inside View, &eacute obrigat&oacuterio submeter o teu CV. O CV pode ser em portugu&ecircs ou ingl&ecircs.</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q7" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q7" class="panel-title" style="color:  rgb(249, 249, 249);">&Eacute necess&aacuterio pagar para participar na Opening Ceremony?</label>
+							<div class="panel-content">A Opening Ceremony do BIV &eacute um evento gratuito no entanto ter&aacutes que efetuar um dep&oacutesito de 2 € para garantir a tua participação. O dep&oacutesito ser&aacute devolvido no final do evento de acordo com o <a
+									href="#nino-doc">regulamento</a>.</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q8" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q8" class="panel-title" style="color:  rgb(249, 249, 249);">&Eacute necess&aacuterio pagar para participar nos Inside Days?</label>
+							<div class="panel-content">Os Inside Days do BIV &eacute um evento gratuito no entanto ter&aacutes que efetuar um dep&oacutesito de 5 € para garantir a tua participação. O dep&oacutesito ser&aacute devolvido no final do evento de acordo com o
+								<a href="#nino-doc"
+									target="_blank">regulamento</a>.
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q9" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q9" class="panel-title" style="color:  rgb(249, 249, 249);">A quem devo enviar o dep&oacutesito?</label>
+							<div class="panel-content">O pagamento da caução dever&aacute ser enviado para a conta “Grupo Local BEST Lisboa”. Os detalhes necess&aacuterios para processar o pagamento estarão dispon&iacuteveis nos <a href="https://forms.gle/iQLDbPFZZzWA5FLK7"
+								target="_blank">formul&aacuterios de inscrição</a>.</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="faq-question">
+							<input id="q10" type="checkbox" class="panel">
+							<div class="plus" style="color: rgb(162, 5, 92);">+</div>
+							<label for="q10" class="panel-title" style="color:  rgb(249, 249, 249);">Quem devo contatar se tiver uma pergunta?</label>
+							<div class="panel-content">Se tiveres alguma d&uacutevida ou problema podes contactar-nos enviando um email para biv@best.ist.ul.pt. 
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+			<br>
+	</section>
+
+	<!-- Our Team 
+	================================================== -->
+	<section id="team" style="margin-top: -20px;" style="background-image: url('images/azul.png');">
+		<div class="text-center">
+            <div class="row" style="background-image: url('images/branco.png');">
+                <h6 class="nino-sectionHeading" style="font-size: 60px" -webkit-text-stroke-color:#A2055C >Conhece a nossa equipa!</h6>
+                <div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/Andreribeiro.png" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">André Ribeiro</h5>
+					<p class="mb-0 position" style="color: #333;">Main Organiser <br> Applied Mathematics and computation</p>
+					<a href="www.linkedin.com/in/andre-ribeiro-math"><img src="images/linkedin.svg"
+							height="35"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/joananunes.jpg" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">Joana Nunes</h5>
+					<p class="mb-0 position" style="color: #333;">Main Organiser <br> Architecture  </p>
+					<a href="http://linkedin.com/in/joana-b-nunes"><img
+							src="images/linkedin.svg" height="35"></a>
+				</div>
+                <div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/carolinaleite.jpg" height="250px"> 
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116)">Carolina Leite</h5>
+					<p class="mb-0 position" style="color: #333">Secretary <br> Electrical Engineering</p>
+					<a href="https://www.linkedin.com/in/carolina-carvalho-leite-19199019a/"><img src="images/linkedin.svg"
+							height="35"></a>
+				</div>
+			</div>
+			<div class="row" style="background-image: url('images/branco.png');">
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/lauramanso.jpg" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">Laura Manso</h5>
+					<p class="mb-0 position" style="color: #333" ;>Corporate Relations Responsible <br> Biomedical Engineering </p>
+					<a href="https://www.linkedin.com/in/laura-manso-88591a231/"><img src="images/linkedin.svg" height="35"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/ritagraca.JPG" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116)">Rita Graça </h5>
+					<p class="mb-0 position" style="color: #333">Public Relations Responsible <br>Biomedical Engineering</p>
+					<a href="https://www.linkedin.com/in/samara-ramos-2aa761205/"><img src="images/linkedin.svg" height="35"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/catarianfinura.jpg" height="250px"> 
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116)">Catarina Finura</h5>
+					<p class="mb-0 position" style="color: #333"> Fund Raising responsible  <br> Biomedical Engineering</p>
+					<a href="https://www.linkedin.com/mwlite/in/catarina-finuras-500a2b265"><img src="images/linkedin.svg"
+							height="35"></a>
+				</div>
+			</div>
+			<div class="row" style="background-image: url('images/branco.png');">
+                <div class="col-md-4 col-sm-6 mb-3">
+                    <img class="teamMember img-circle" src="images/our-team/joaomata.JPG" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">João Mata</h5>
+					<p class="mb-0 position" style="color: #333;">Design Responsible <br> Biomedical Engineering </p>
+					<a href="https://www.linkedin.com/in/joao-m-mata"><img
+							src="images/linkedin.svg" height="35"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+                    <img class="teamMember img-circle" src="images/our-team/sofiaoliveira.jpg" height="250px">
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116);">Sofia Oliveira</h5>
+					<p class="mb-0 position" style="color: #333;">Information Technology Responsible <br> Biomedical Engineering</p>
+					<a href="https://www.linkedin.com/in/sofiasilvestreoliveira/"><img src="images/linkedin.svg"
+							height="35"></a>
+				</div>
+				<div class="col-md-4 col-sm-6 mb-3">
+					<img class="teamMember img-circle" src="images/our-team/jorge2.jpg" height="250px"> 
+					<h5 class="name mb-0" style="color: rgb(18, 66, 116)">Jorge Fernandes </h5>
+					<p class="mb-0 position" style="color: #333">Topic Team <br>Industrial Engineering and Management </p>
+					<a href="https://www.linkedin.com/in/jorge-fernandes-624033273/"><img src="images/linkedin.svg"
+							height="35"></a>
+				</div>
+
+
+			</div>
+		</div>
+	</section>
+
+
+
+
+	
+
+	<!-- Footer
+    ================================================== -->
+	<footer id="footer_old">
+		<div class="container text-center">
+			<div class="row line">
+				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6">
+					<h1 style="font-size:14px; color: #fff;"><b> Contactos</b> </h1>
+					<p style="color: #FFF;"> lisbon@best.eu.org </p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6">
+					<h1 style="font-size:14px; color: #fff ;"> <b>Morada</b> </h1>
+					<p style="color: #FFF;"> Av. Rovisco Pais, 1 </p>
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4 col-ts-6 col-ts-offset-3">
+					<h1 style="font-size:14px; color: #fff ;"><b> Segue-nos </b></h1>
+					<div class="nino-followUs">
+						<div class="socialNetwork">
+							<a href="https://www.facebook.com/bestlisboa/" class="nino-icon"><i
+									class="mdi mdi-facebook"></i></a>
+							<a href="https://www.instagram.com/best.lisbon" class="nino-icon"><i
+									class="mdi mdi-instagram"></i></a>
+							<a href="https://www.linkedin.com/company/best-lisboa/" class="nino-icon"><i
+									class="mdi mdi-linkedin"></i></a>
+							<a href="https://www.youtube.com/user/BESTLisboa" class="nino-icon"><i
+									class="mdi mdi-youtube-play"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nino-copyright" style="color: #FFF;">BEST Lisbon 2021 <br>All Rights Reserved.</div>
+	</footer>
+	<!--/#footer-->
+
+	<!-- Scroll to top
+    ================================================== -->
+	<a href="#" id="nino-scrollToTop">Go to Top</a>
+
+	<script>
+		initializeClock();
+		function initializeClock() {
+			var d = new Date();
+			var endtime = new Date("Jan 12, 2022 23:59:59");        //mudar aqui a data, ano/mês/dia/hora/minuto...
+			var days = document.getElementById("days");
+			var hours = document.getElementById("hours");
+			var minutes = document.getElementById("minutes");
+			var seconds = document.getElementById("seconds");
+			var timeinterval = setInterval(function () {
+				var t = getTimeRemaining(endtime);
+				days.innerHTML = t.days;
+				hours.innerHTML = t.hours;
+				minutes.innerHTML = t.minutes;
+				seconds.innerHTML = t.seconds;
+				if (t.total <= 0) {
+					clearInterval(timeinterval);
+				}
+			}, 1000);
+		}
+
+		function getTimeRemaining(endtime) {
+			var t = Date.parse(endtime) - Date.parse(new Date());
+			var seconds = Math.floor((t / 1000) % 60);
+			var minutes = Math.floor((t / 1000 / 60) % 60);
+			var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+			var days = Math.floor(t / (1000 * 60 * 60 * 24));
+			return {
+				'total': t,
+				'days': days,
+				'hours': hours,
+				'minutes': minutes,
+				'seconds': seconds
+			};
+		}
+
+	</script>
+	<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- css3-mediaqueries.js for IE less than 9 -->
+	<!--[if lt IE 9]>
+	    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
 </body>
 
 </html>
