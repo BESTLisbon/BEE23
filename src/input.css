@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        font-family: "Montserrat", sans-serif;
+    }
+}
+
+.svg-border {
+    filter: drop-shadow(0 -1px 0px white) drop-shadow(0 -1px 0px white)
+        drop-shadow(0 2px 0px white) drop-shadow(0 2px 0px white);
+}
+
+/* .swiper {
+    max-width: 500px;
+    max-height: 400px;
+} */
