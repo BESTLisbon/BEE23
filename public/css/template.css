@@ -87,13 +87,25 @@ hr {
 	color: rgb(18, 66, 116);
 }
 
+section#BEE {
+	margin: 0;
+	padding: 0;
+}
+section#team {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+
 
 /* =============== DEFAULT HTML - LINK STYLES =============== */
 
 a {
 	text-decoration: none;
 	outline: none;
-	color: rgb(74, 110, 255);
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-weight: bold;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
@@ -122,6 +134,10 @@ a[class*="glyphicon-"] {
 	text-decoration: none;
 }
 
+body {
+	padding-left: 0;
+}
+
 /* =============== DEFAULT HTML - HEADING STYLES =============== */
 
 h1, h2, h3, h4, h5 {
@@ -137,17 +153,15 @@ h1, h2, h3, h4, h5 {
     font-family: Impact, Charcoal, sans-serif;
 }
 
-h1, h2 {
-	font-weight: 300;
+h1, h2,h8 {
+	font-weight: 200;
 }
 
 h1 {
 	font-size: 50px;
 }
 
-h2 {
-	font-size:50px;
-}
+
 
 h3 {
 	font-size: 50px;
@@ -173,8 +187,8 @@ h6 {
 	margin: 5px 0 10px;
 	text-transform: uppercase;
 	-webkit-text-stroke-width: 0.2px;
-    -webkit-text-stroke-color: rgb(162, 5, 92);
-    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color:transparent;
+    -webkit-text-fill-color: rgb(162, 5, 92);
     -webkit-background-clip: text;
             background-clip: text;
     background-image: url('BEE23\public\images\azul.png');
@@ -194,13 +208,27 @@ h2 {
 	margin: 5px 0 10px;
 	text-transform: uppercase;
     -webkit-text-stroke-color: transparent;
-    -webkit-text-fill-color: rgb(18, 66, 116);
+    -webkit-text-fill-color: rgb(12, 74, 102) ;
     -webkit-background-clip: text;
             background-clip: text;
     background-image: url('BEE23\public\images\azul.png');
     background-position: 0px 0px;
     font-family: Impact, Charcoal, sans-serif;
 }
+
+h8 {
+	margin: 5px 0 10px;
+	text-transform: uppercase;
+    -webkit-text-stroke-color: transparent;
+    -webkit-text-fill-color:  rgb(162, 5, 92);
+    -webkit-background-clip: text;
+            background-clip: text;
+    background-image: url('BEE23\public\images\azul.png');
+    background-position: 0px 0px;
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+
 /* =============== DEFAULT HTML - LIST STYLES =============== */
 
 ul, ul li, ol, ol li, p, form, input {
@@ -296,7 +324,7 @@ img.img-full-width {
 	color: #fff;
 	text-transform: uppercase;
 	padding: 10px 20px;
-	text-align: center;
+	text-align: justify;
 	border: 2px solid #fff;
 	font-size: 12px;
 	line-height: 100%;
@@ -577,6 +605,8 @@ img.img-full-width {
 }
 
 /* =============== LAYOUT - MENU AREA =============== */
+
+
 
 #nino-navbar {
 	background: rgba(255, 255, 255, 0);
@@ -973,6 +1003,8 @@ f
 	color: #000000;
 	/*font-family: 'Montserrat', sans-serif;*/
 }
+
+
 
 /* =============== SECTION UNIQUE DESIGN B =============== */
 
@@ -1888,7 +1920,7 @@ f
 }
 
 #footer_old .line {
-	border-bottom: 2px solid rgb(162, 5, 92);
+	border-bottom: 2px solid rgb(249, 249, 249);
 }
 
 /*#footer_old .row {
@@ -1929,6 +1961,8 @@ f
 	font-weight: 300;
 	display: inline-block;
 	margin-right: 10px;
+	width: 20px;
+	height: 20px;
 }
 
 #footer_old .nino-followUs .socialNetwork .nino-icon {
@@ -1937,6 +1971,9 @@ f
 	font-size: 18px;
 	color: #fff;
 	margin-top: -1rem;
+	width: 20px;
+	height: 20px;
+	
 }
 
 #footer_old .nino-subscribeForm .input-group input, #footer_old .nino-subscribeForm .input-group .btn {
@@ -2472,3 +2509,169 @@ div.pp_default .pp_social {
   }
 
  
+  .button {
+	border-radius: 4px;
+	background-image: url('BEE23\public\images\branco.png');
+	border: none;
+	color: #000000;
+	text-align: center;
+	font-size: 30px;
+	padding: 50px;
+	width: 400px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+  }
+  
+  
+  .button span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .button span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+  
+  .button:hover span {
+	padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
+  
+
+input[type='checkbox'] {
+	display: none;
+}
+
+.send {
+	--hue: 30deg;
+	position: relative;
+	width: 20rem;
+	height: 20rem;
+	perspective: 66rem;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	transition: 1s;
+}
+	.rotate {
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transform-style: preserve-3d;
+	}
+	.move {
+		transform-style: preserve-3d;
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+	.part {
+		position: absolute;
+		transform-style: preserve-3d;
+		width: 100%;
+		height: 100%;
+	}
+	.part ::before{
+
+	}
+	.part ::after{
+		content: 'SEND';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: hsl(var(--hue), 70%, 75%);
+		font-size: 4.4rem;
+		font-weight: bold;
+		color: rgba(255, 255, 255, 0.8);
+	}
+
+	.left ::before {
+		transform-origin: 50% 25%;
+		clip-path: polygon(0 0, 100% 0, 100% 1px, 0 calc(50% + 1px));
+	}
+
+	.left ::after {
+		clip-path: polygon(0 50%, 100% 0, 100% 1px, 1px 100%, 0 100%);
+	}
+
+	.right ::before {
+		clip-path: polygon(0 100%, 100% 0, 100% 1px, calc(50% + 1px) 100%, 50% 100%);
+	}
+
+	.right::after {
+		transform-origin: 75% 50%;
+		clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+	}
+
+#send:checked {
+	~ .send {
+		.rotate {
+			transform: rotate3d(1, -0.2, 0.2, 65deg);
+
+			.move {
+				animation: fly 3s cubic-bezier(0.72, -0.23, 0.35, 1.03) 1s both;
+			}
+
+			.part {
+				&.left {
+					transform: rotate3d(-1, 1, 0, 60deg);
+
+					&::before {
+						transform: rotate3d(-1, 0.5, 0, -60deg);
+					}
+
+					&::after {
+						background-color: hsl(var(--hue), 50%, 70%);
+					}
+				}
+
+				&.right {
+					transform: rotate3d(-1, 1, 0, -60deg);
+
+					&::before {
+						background-color: hsl(var(--hue), 40%, 60%);
+					}
+
+					&::after {
+						transform: rotate3d(-0.25, 0.5, 0, 100deg);
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes fly {
+	0% {
+		transform: translate3D(0, 0, 0rem);
+	}
+
+	50% {
+		transform: translate3D(400rem, -400rem, 0rem);
+	}
+
+	50.00001% {
+		transform: translate3D(-100rem, 100rem, 0rem);
+	}
+
+	100% {
+		transform: translate3D(0rem, 0rem, 0rem);
+	}
+}
+
